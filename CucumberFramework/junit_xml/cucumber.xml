@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="22.768716">
+<testcase classname="login and logout of FB Application" name="Verification of Login functionality" time="17.767231">
+<system-out><![CDATA[Given Open the Chrome and launch the application............................passed
+When Enter the Username and Password........................................passed
+Then Login should be sucessfull.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login and logout of FB Application" name="Verification of Logout" time="5.001485">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepDefinations.Login.scroll_down_the_page(Login.java:67)&#13;&#10;&#9;at ✽.Scroll down the page(src/main/java/features/Login.feature:11)&#13;&#10;"><![CDATA[Given Scroll down the page..................................................failed
+When Click on User navigation pane link.....................................skipped
+And Click on Logout link....................................................skipped
+Then User should be logged out..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepDefinations.Login.scroll_down_the_page(Login.java:67)
+	at ✽.Scroll down the page(src/main/java/features/Login.feature:11)
+]]></failure>
+</testcase>
+</testsuite>

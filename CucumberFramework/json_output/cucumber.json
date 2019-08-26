@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verification of Login functionality",
+        "description": "",
+        "id": "login-and-logout-of-fb-application;verification-of-login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8511922800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Chrome and launch the application",
+            "match": {
+              "location": "Login.open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1438250000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the Username and Password",
+            "match": {
+              "location": "Login.enter_user_name_pwd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7815324100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login should be sucessfull",
+            "match": {
+              "location": "Login.Login_sucess()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Verification of Logout",
+        "description": "",
+        "id": "login-and-logout-of-fb-application;verification-of-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinations.Login.scroll_down_the_page(Login.java:67)\r\n\tat ✽.Scroll down the page(src/main/java/features/Login.feature:11)\r\n",
+              "duration": 5001165900,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Scroll down the page",
+            "match": {
+              "location": "Login.scroll_down_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Click on User navigation pane link",
+            "match": {
+              "location": "Login.click_on_User_navigation_pane_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3400,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Click on Logout link",
+            "match": {
+              "location": "Login.click_on_Logout_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User should be logged out",
+            "match": {
+              "location": "Login.user_should_be_logged_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login and logout of FB Application",
+    "description": "",
+    "id": "login-and-logout-of-fb-application",
+    "keyword": "Feature",
+    "uri": "src/main/java/features/Login.feature",
+    "tags": []
+  }
+]
